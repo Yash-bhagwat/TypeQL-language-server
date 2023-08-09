@@ -24,6 +24,8 @@ import { VocabularyImpl } from "antlr4ts/VocabularyImpl";
 import * as Utils from "antlr4ts/misc/Utils";
 
 import { TypeQLListener } from "./TypeQLListener";
+import { TypeQLVisitor } from "./TypeQLVisitor";
+
 
 export class TypeQLParser extends Parser {
 	public static readonly T__0 = 1;
@@ -3350,6 +3352,14 @@ export class Eof_queryContext extends ParserRuleContext {
 			listener.exitEof_query(this);
 		}
 	}
+	// @Override
+	public accept<Result>(visitor: TypeQLVisitor<Result>): Result {
+		if (visitor.visitEof_query) {
+			return visitor.visitEof_query(this);
+		} else {
+			return visitor.visitChildren(this);
+		}
+	}
 }
 
 
@@ -3381,6 +3391,14 @@ export class Eof_queriesContext extends ParserRuleContext {
 			listener.exitEof_queries(this);
 		}
 	}
+	// @Override
+	public accept<Result>(visitor: TypeQLVisitor<Result>): Result {
+		if (visitor.visitEof_queries) {
+			return visitor.visitEof_queries(this);
+		} else {
+			return visitor.visitChildren(this);
+		}
+	}
 }
 
 
@@ -3404,6 +3422,14 @@ export class Eof_patternContext extends ParserRuleContext {
 	public exitRule(listener: TypeQLListener): void {
 		if (listener.exitEof_pattern) {
 			listener.exitEof_pattern(this);
+		}
+	}
+	// @Override
+	public accept<Result>(visitor: TypeQLVisitor<Result>): Result {
+		if (visitor.visitEof_pattern) {
+			return visitor.visitEof_pattern(this);
+		} else {
+			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -3431,6 +3457,14 @@ export class Eof_patternsContext extends ParserRuleContext {
 			listener.exitEof_patterns(this);
 		}
 	}
+	// @Override
+	public accept<Result>(visitor: TypeQLVisitor<Result>): Result {
+		if (visitor.visitEof_patterns) {
+			return visitor.visitEof_patterns(this);
+		} else {
+			return visitor.visitChildren(this);
+		}
+	}
 }
 
 
@@ -3454,6 +3488,14 @@ export class Eof_definablesContext extends ParserRuleContext {
 	public exitRule(listener: TypeQLListener): void {
 		if (listener.exitEof_definables) {
 			listener.exitEof_definables(this);
+		}
+	}
+	// @Override
+	public accept<Result>(visitor: TypeQLVisitor<Result>): Result {
+		if (visitor.visitEof_definables) {
+			return visitor.visitEof_definables(this);
+		} else {
+			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -3481,6 +3523,14 @@ export class Eof_variableContext extends ParserRuleContext {
 			listener.exitEof_variable(this);
 		}
 	}
+	// @Override
+	public accept<Result>(visitor: TypeQLVisitor<Result>): Result {
+		if (visitor.visitEof_variable) {
+			return visitor.visitEof_variable(this);
+		} else {
+			return visitor.visitChildren(this);
+		}
+	}
 }
 
 
@@ -3506,6 +3556,14 @@ export class Eof_labelContext extends ParserRuleContext {
 			listener.exitEof_label(this);
 		}
 	}
+	// @Override
+	public accept<Result>(visitor: TypeQLVisitor<Result>): Result {
+		if (visitor.visitEof_label) {
+			return visitor.visitEof_label(this);
+		} else {
+			return visitor.visitChildren(this);
+		}
+	}
 }
 
 
@@ -3529,6 +3587,14 @@ export class Eof_schema_ruleContext extends ParserRuleContext {
 	public exitRule(listener: TypeQLListener): void {
 		if (listener.exitEof_schema_rule) {
 			listener.exitEof_schema_rule(this);
+		}
+	}
+	// @Override
+	public accept<Result>(visitor: TypeQLVisitor<Result>): Result {
+		if (visitor.visitEof_schema_rule) {
+			return visitor.visitEof_schema_rule(this);
+		} else {
+			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -3579,6 +3645,14 @@ export class QueryContext extends ParserRuleContext {
 			listener.exitQuery(this);
 		}
 	}
+	// @Override
+	public accept<Result>(visitor: TypeQLVisitor<Result>): Result {
+		if (visitor.visitQuery) {
+			return visitor.visitQuery(this);
+		} else {
+			return visitor.visitChildren(this);
+		}
+	}
 }
 
 
@@ -3604,6 +3678,14 @@ export class Query_defineContext extends ParserRuleContext {
 			listener.exitQuery_define(this);
 		}
 	}
+	// @Override
+	public accept<Result>(visitor: TypeQLVisitor<Result>): Result {
+		if (visitor.visitQuery_define) {
+			return visitor.visitQuery_define(this);
+		} else {
+			return visitor.visitChildren(this);
+		}
+	}
 }
 
 
@@ -3627,6 +3709,14 @@ export class Query_undefineContext extends ParserRuleContext {
 	public exitRule(listener: TypeQLListener): void {
 		if (listener.exitQuery_undefine) {
 			listener.exitQuery_undefine(this);
+		}
+	}
+	// @Override
+	public accept<Result>(visitor: TypeQLVisitor<Result>): Result {
+		if (visitor.visitQuery_undefine) {
+			return visitor.visitQuery_undefine(this);
+		} else {
+			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -3658,6 +3748,14 @@ export class Query_insertContext extends ParserRuleContext {
 			listener.exitQuery_insert(this);
 		}
 	}
+	// @Override
+	public accept<Result>(visitor: TypeQLVisitor<Result>): Result {
+		if (visitor.visitQuery_insert) {
+			return visitor.visitQuery_insert(this);
+		} else {
+			return visitor.visitChildren(this);
+		}
+	}
 }
 
 
@@ -3684,6 +3782,14 @@ export class Query_updateContext extends ParserRuleContext {
 	public exitRule(listener: TypeQLListener): void {
 		if (listener.exitQuery_update) {
 			listener.exitQuery_update(this);
+		}
+	}
+	// @Override
+	public accept<Result>(visitor: TypeQLVisitor<Result>): Result {
+		if (visitor.visitQuery_update) {
+			return visitor.visitQuery_update(this);
+		} else {
+			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -3715,6 +3821,14 @@ export class Query_deleteContext extends ParserRuleContext {
 			listener.exitQuery_delete(this);
 		}
 	}
+	// @Override
+	public accept<Result>(visitor: TypeQLVisitor<Result>): Result {
+		if (visitor.visitQuery_delete) {
+			return visitor.visitQuery_delete(this);
+		} else {
+			return visitor.visitChildren(this);
+		}
+	}
 }
 
 
@@ -3741,6 +3855,14 @@ export class Query_matchContext extends ParserRuleContext {
 	public exitRule(listener: TypeQLListener): void {
 		if (listener.exitQuery_match) {
 			listener.exitQuery_match(this);
+		}
+	}
+	// @Override
+	public accept<Result>(visitor: TypeQLVisitor<Result>): Result {
+		if (visitor.visitQuery_match) {
+			return visitor.visitQuery_match(this);
+		} else {
+			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -3770,6 +3892,14 @@ export class Query_match_aggregateContext extends ParserRuleContext {
 			listener.exitQuery_match_aggregate(this);
 		}
 	}
+	// @Override
+	public accept<Result>(visitor: TypeQLVisitor<Result>): Result {
+		if (visitor.visitQuery_match_aggregate) {
+			return visitor.visitQuery_match_aggregate(this);
+		} else {
+			return visitor.visitChildren(this);
+		}
+	}
 }
 
 
@@ -3795,6 +3925,14 @@ export class Query_match_groupContext extends ParserRuleContext {
 	public exitRule(listener: TypeQLListener): void {
 		if (listener.exitQuery_match_group) {
 			listener.exitQuery_match_group(this);
+		}
+	}
+	// @Override
+	public accept<Result>(visitor: TypeQLVisitor<Result>): Result {
+		if (visitor.visitQuery_match_group) {
+			return visitor.visitQuery_match_group(this);
+		} else {
+			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -3825,6 +3963,14 @@ export class Query_match_group_aggContext extends ParserRuleContext {
 	public exitRule(listener: TypeQLListener): void {
 		if (listener.exitQuery_match_group_agg) {
 			listener.exitQuery_match_group_agg(this);
+		}
+	}
+	// @Override
+	public accept<Result>(visitor: TypeQLVisitor<Result>): Result {
+		if (visitor.visitQuery_match_group_agg) {
+			return visitor.visitQuery_match_group_agg(this);
+		} else {
+			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -3860,6 +4006,14 @@ export class ModifiersContext extends ParserRuleContext {
 			listener.exitModifiers(this);
 		}
 	}
+	// @Override
+	public accept<Result>(visitor: TypeQLVisitor<Result>): Result {
+		if (visitor.visitModifiers) {
+			return visitor.visitModifiers(this);
+		} else {
+			return visitor.visitChildren(this);
+		}
+	}
 }
 
 
@@ -3889,6 +4043,14 @@ export class FilterContext extends ParserRuleContext {
 	public exitRule(listener: TypeQLListener): void {
 		if (listener.exitFilter) {
 			listener.exitFilter(this);
+		}
+	}
+	// @Override
+	public accept<Result>(visitor: TypeQLVisitor<Result>): Result {
+		if (visitor.visitFilter) {
+			return visitor.visitFilter(this);
+		} else {
+			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -3922,6 +4084,14 @@ export class SortContext extends ParserRuleContext {
 			listener.exitSort(this);
 		}
 	}
+	// @Override
+	public accept<Result>(visitor: TypeQLVisitor<Result>): Result {
+		if (visitor.visitSort) {
+			return visitor.visitSort(this);
+		} else {
+			return visitor.visitChildren(this);
+		}
+	}
 }
 
 
@@ -3943,6 +4113,14 @@ export class Var_orderContext extends ParserRuleContext {
 	public exitRule(listener: TypeQLListener): void {
 		if (listener.exitVar_order) {
 			listener.exitVar_order(this);
+		}
+	}
+	// @Override
+	public accept<Result>(visitor: TypeQLVisitor<Result>): Result {
+		if (visitor.visitVar_order) {
+			return visitor.visitVar_order(this);
+		} else {
+			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -3968,6 +4146,14 @@ export class OffsetContext extends ParserRuleContext {
 			listener.exitOffset(this);
 		}
 	}
+	// @Override
+	public accept<Result>(visitor: TypeQLVisitor<Result>): Result {
+		if (visitor.visitOffset) {
+			return visitor.visitOffset(this);
+		} else {
+			return visitor.visitChildren(this);
+		}
+	}
 }
 
 
@@ -3989,6 +4175,14 @@ export class LimitContext extends ParserRuleContext {
 	public exitRule(listener: TypeQLListener): void {
 		if (listener.exitLimit) {
 			listener.exitLimit(this);
+		}
+	}
+	// @Override
+	public accept<Result>(visitor: TypeQLVisitor<Result>): Result {
+		if (visitor.visitLimit) {
+			return visitor.visitLimit(this);
+		} else {
+			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -4014,6 +4208,14 @@ export class Match_aggregateContext extends ParserRuleContext {
 	public exitRule(listener: TypeQLListener): void {
 		if (listener.exitMatch_aggregate) {
 			listener.exitMatch_aggregate(this);
+		}
+	}
+	// @Override
+	public accept<Result>(visitor: TypeQLVisitor<Result>): Result {
+		if (visitor.visitMatch_aggregate) {
+			return visitor.visitMatch_aggregate(this);
+		} else {
+			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -4044,6 +4246,14 @@ export class Aggregate_methodContext extends ParserRuleContext {
 			listener.exitAggregate_method(this);
 		}
 	}
+	// @Override
+	public accept<Result>(visitor: TypeQLVisitor<Result>): Result {
+		if (visitor.visitAggregate_method) {
+			return visitor.visitAggregate_method(this);
+		} else {
+			return visitor.visitChildren(this);
+		}
+	}
 }
 
 
@@ -4065,6 +4275,14 @@ export class Match_groupContext extends ParserRuleContext {
 	public exitRule(listener: TypeQLListener): void {
 		if (listener.exitMatch_group) {
 			listener.exitMatch_group(this);
+		}
+	}
+	// @Override
+	public accept<Result>(visitor: TypeQLVisitor<Result>): Result {
+		if (visitor.visitMatch_group) {
+			return visitor.visitMatch_group(this);
+		} else {
+			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -4097,6 +4315,14 @@ export class DefinablesContext extends ParserRuleContext {
 			listener.exitDefinables(this);
 		}
 	}
+	// @Override
+	public accept<Result>(visitor: TypeQLVisitor<Result>): Result {
+		if (visitor.visitDefinables) {
+			return visitor.visitDefinables(this);
+		} else {
+			return visitor.visitChildren(this);
+		}
+	}
 }
 
 
@@ -4122,6 +4348,14 @@ export class DefinableContext extends ParserRuleContext {
 	public exitRule(listener: TypeQLListener): void {
 		if (listener.exitDefinable) {
 			listener.exitDefinable(this);
+		}
+	}
+	// @Override
+	public accept<Result>(visitor: TypeQLVisitor<Result>): Result {
+		if (visitor.visitDefinable) {
+			return visitor.visitDefinable(this);
+		} else {
+			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -4152,6 +4386,14 @@ export class PatternsContext extends ParserRuleContext {
 	public exitRule(listener: TypeQLListener): void {
 		if (listener.exitPatterns) {
 			listener.exitPatterns(this);
+		}
+	}
+	// @Override
+	public accept<Result>(visitor: TypeQLVisitor<Result>): Result {
+		if (visitor.visitPatterns) {
+			return visitor.visitPatterns(this);
+		} else {
+			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -4187,6 +4429,14 @@ export class PatternContext extends ParserRuleContext {
 			listener.exitPattern(this);
 		}
 	}
+	// @Override
+	public accept<Result>(visitor: TypeQLVisitor<Result>): Result {
+		if (visitor.visitPattern) {
+			return visitor.visitPattern(this);
+		} else {
+			return visitor.visitChildren(this);
+		}
+	}
 }
 
 
@@ -4209,6 +4459,14 @@ export class Pattern_conjunctionContext extends ParserRuleContext {
 	public exitRule(listener: TypeQLListener): void {
 		if (listener.exitPattern_conjunction) {
 			listener.exitPattern_conjunction(this);
+		}
+	}
+	// @Override
+	public accept<Result>(visitor: TypeQLVisitor<Result>): Result {
+		if (visitor.visitPattern_conjunction) {
+			return visitor.visitPattern_conjunction(this);
+		} else {
+			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -4250,6 +4508,14 @@ export class Pattern_disjunctionContext extends ParserRuleContext {
 			listener.exitPattern_disjunction(this);
 		}
 	}
+	// @Override
+	public accept<Result>(visitor: TypeQLVisitor<Result>): Result {
+		if (visitor.visitPattern_disjunction) {
+			return visitor.visitPattern_disjunction(this);
+		} else {
+			return visitor.visitChildren(this);
+		}
+	}
 }
 
 
@@ -4273,6 +4539,14 @@ export class Pattern_negationContext extends ParserRuleContext {
 	public exitRule(listener: TypeQLListener): void {
 		if (listener.exitPattern_negation) {
 			listener.exitPattern_negation(this);
+		}
+	}
+	// @Override
+	public accept<Result>(visitor: TypeQLVisitor<Result>): Result {
+		if (visitor.visitPattern_negation) {
+			return visitor.visitPattern_negation(this);
+		} else {
+			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -4303,6 +4577,14 @@ export class Pattern_variableContext extends ParserRuleContext {
 	public exitRule(listener: TypeQLListener): void {
 		if (listener.exitPattern_variable) {
 			listener.exitPattern_variable(this);
+		}
+	}
+	// @Override
+	public accept<Result>(visitor: TypeQLVisitor<Result>): Result {
+		if (visitor.visitPattern_variable) {
+			return visitor.visitPattern_variable(this);
+		} else {
+			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -4336,6 +4618,14 @@ export class Variable_conceptContext extends ParserRuleContext {
 			listener.exitVariable_concept(this);
 		}
 	}
+	// @Override
+	public accept<Result>(visitor: TypeQLVisitor<Result>): Result {
+		if (visitor.visitVariable_concept) {
+			return visitor.visitVariable_concept(this);
+		} else {
+			return visitor.visitChildren(this);
+		}
+	}
 }
 
 
@@ -4367,6 +4657,14 @@ export class Variable_typeContext extends ParserRuleContext {
 	public exitRule(listener: TypeQLListener): void {
 		if (listener.exitVariable_type) {
 			listener.exitVariable_type(this);
+		}
+	}
+	// @Override
+	public accept<Result>(visitor: TypeQLVisitor<Result>): Result {
+		if (visitor.visitVariable_type) {
+			return visitor.visitVariable_type(this);
+		} else {
+			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -4422,6 +4720,14 @@ export class Type_constraintContext extends ParserRuleContext {
 			listener.exitType_constraint(this);
 		}
 	}
+	// @Override
+	public accept<Result>(visitor: TypeQLVisitor<Result>): Result {
+		if (visitor.visitType_constraint) {
+			return visitor.visitType_constraint(this);
+		} else {
+			return visitor.visitChildren(this);
+		}
+	}
 }
 
 
@@ -4450,6 +4756,14 @@ export class Variable_thingsContext extends ParserRuleContext {
 	public exitRule(listener: TypeQLListener): void {
 		if (listener.exitVariable_things) {
 			listener.exitVariable_things(this);
+		}
+	}
+	// @Override
+	public accept<Result>(visitor: TypeQLVisitor<Result>): Result {
+		if (visitor.visitVariable_things) {
+			return visitor.visitVariable_things(this);
+		} else {
+			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -4482,6 +4796,14 @@ export class Variable_thing_anyContext extends ParserRuleContext {
 			listener.exitVariable_thing_any(this);
 		}
 	}
+	// @Override
+	public accept<Result>(visitor: TypeQLVisitor<Result>): Result {
+		if (visitor.visitVariable_thing_any) {
+			return visitor.visitVariable_thing_any(this);
+		} else {
+			return visitor.visitChildren(this);
+		}
+	}
 }
 
 
@@ -4511,6 +4833,14 @@ export class Variable_thingContext extends ParserRuleContext {
 	public exitRule(listener: TypeQLListener): void {
 		if (listener.exitVariable_thing) {
 			listener.exitVariable_thing(this);
+		}
+	}
+	// @Override
+	public accept<Result>(visitor: TypeQLVisitor<Result>): Result {
+		if (visitor.visitVariable_thing) {
+			return visitor.visitVariable_thing(this);
+		} else {
+			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -4545,6 +4875,14 @@ export class Variable_relationContext extends ParserRuleContext {
 			listener.exitVariable_relation(this);
 		}
 	}
+	// @Override
+	public accept<Result>(visitor: TypeQLVisitor<Result>): Result {
+		if (visitor.visitVariable_relation) {
+			return visitor.visitVariable_relation(this);
+		} else {
+			return visitor.visitChildren(this);
+		}
+	}
 }
 
 
@@ -4577,6 +4915,14 @@ export class Variable_attributeContext extends ParserRuleContext {
 			listener.exitVariable_attribute(this);
 		}
 	}
+	// @Override
+	public accept<Result>(visitor: TypeQLVisitor<Result>): Result {
+		if (visitor.visitVariable_attribute) {
+			return visitor.visitVariable_attribute(this);
+		} else {
+			return visitor.visitChildren(this);
+		}
+	}
 }
 
 
@@ -4607,6 +4953,14 @@ export class RelationContext extends ParserRuleContext {
 			listener.exitRelation(this);
 		}
 	}
+	// @Override
+	public accept<Result>(visitor: TypeQLVisitor<Result>): Result {
+		if (visitor.visitRelation) {
+			return visitor.visitRelation(this);
+		} else {
+			return visitor.visitChildren(this);
+		}
+	}
 }
 
 
@@ -4634,6 +4988,14 @@ export class Role_playerContext extends ParserRuleContext {
 			listener.exitRole_player(this);
 		}
 	}
+	// @Override
+	public accept<Result>(visitor: TypeQLVisitor<Result>): Result {
+		if (visitor.visitRole_player) {
+			return visitor.visitRole_player(this);
+		} else {
+			return visitor.visitChildren(this);
+		}
+	}
 }
 
 
@@ -4654,6 +5016,14 @@ export class PlayerContext extends ParserRuleContext {
 	public exitRule(listener: TypeQLListener): void {
 		if (listener.exitPlayer) {
 			listener.exitPlayer(this);
+		}
+	}
+	// @Override
+	public accept<Result>(visitor: TypeQLVisitor<Result>): Result {
+		if (visitor.visitPlayer) {
+			return visitor.visitPlayer(this);
+		} else {
+			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -4686,6 +5056,14 @@ export class AttributesContext extends ParserRuleContext {
 			listener.exitAttributes(this);
 		}
 	}
+	// @Override
+	public accept<Result>(visitor: TypeQLVisitor<Result>): Result {
+		if (visitor.visitAttributes) {
+			return visitor.visitAttributes(this);
+		} else {
+			return visitor.visitChildren(this);
+		}
+	}
 }
 
 
@@ -4713,6 +5091,14 @@ export class AttributeContext extends ParserRuleContext {
 	public exitRule(listener: TypeQLListener): void {
 		if (listener.exitAttribute) {
 			listener.exitAttribute(this);
+		}
+	}
+	// @Override
+	public accept<Result>(visitor: TypeQLVisitor<Result>): Result {
+		if (visitor.visitAttribute) {
+			return visitor.visitAttribute(this);
+		} else {
+			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -4749,6 +5135,14 @@ export class PredicateContext extends ParserRuleContext {
 			listener.exitPredicate(this);
 		}
 	}
+	// @Override
+	public accept<Result>(visitor: TypeQLVisitor<Result>): Result {
+		if (visitor.visitPredicate) {
+			return visitor.visitPredicate(this);
+		} else {
+			return visitor.visitChildren(this);
+		}
+	}
 }
 
 
@@ -4776,6 +5170,14 @@ export class Predicate_equalityContext extends ParserRuleContext {
 			listener.exitPredicate_equality(this);
 		}
 	}
+	// @Override
+	public accept<Result>(visitor: TypeQLVisitor<Result>): Result {
+		if (visitor.visitPredicate_equality) {
+			return visitor.visitPredicate_equality(this);
+		} else {
+			return visitor.visitChildren(this);
+		}
+	}
 }
 
 
@@ -4797,6 +5199,14 @@ export class Predicate_substringContext extends ParserRuleContext {
 	public exitRule(listener: TypeQLListener): void {
 		if (listener.exitPredicate_substring) {
 			listener.exitPredicate_substring(this);
+		}
+	}
+	// @Override
+	public accept<Result>(visitor: TypeQLVisitor<Result>): Result {
+		if (visitor.visitPredicate_substring) {
+			return visitor.visitPredicate_substring(this);
+		} else {
+			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -4822,6 +5232,14 @@ export class Predicate_valueContext extends ParserRuleContext {
 	public exitRule(listener: TypeQLListener): void {
 		if (listener.exitPredicate_value) {
 			listener.exitPredicate_value(this);
+		}
+	}
+	// @Override
+	public accept<Result>(visitor: TypeQLVisitor<Result>): Result {
+		if (visitor.visitPredicate_value) {
+			return visitor.visitPredicate_value(this);
+		} else {
+			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -4857,6 +5275,14 @@ export class Schema_ruleContext extends ParserRuleContext {
 			listener.exitSchema_rule(this);
 		}
 	}
+	// @Override
+	public accept<Result>(visitor: TypeQLVisitor<Result>): Result {
+		if (visitor.visitSchema_rule) {
+			return visitor.visitSchema_rule(this);
+		} else {
+			return visitor.visitChildren(this);
+		}
+	}
 }
 
 
@@ -4885,6 +5311,14 @@ export class Type_anyContext extends ParserRuleContext {
 			listener.exitType_any(this);
 		}
 	}
+	// @Override
+	public accept<Result>(visitor: TypeQLVisitor<Result>): Result {
+		if (visitor.visitType_any) {
+			return visitor.visitType_any(this);
+		} else {
+			return visitor.visitChildren(this);
+		}
+	}
 }
 
 
@@ -4910,6 +5344,14 @@ export class Type_scopedContext extends ParserRuleContext {
 			listener.exitType_scoped(this);
 		}
 	}
+	// @Override
+	public accept<Result>(visitor: TypeQLVisitor<Result>): Result {
+		if (visitor.visitType_scoped) {
+			return visitor.visitType_scoped(this);
+		} else {
+			return visitor.visitChildren(this);
+		}
+	}
 }
 
 
@@ -4933,6 +5375,14 @@ export class TypeContext extends ParserRuleContext {
 	public exitRule(listener: TypeQLListener): void {
 		if (listener.exitType) {
 			listener.exitType(this);
+		}
+	}
+	// @Override
+	public accept<Result>(visitor: TypeQLVisitor<Result>): Result {
+		if (visitor.visitType) {
+			return visitor.visitType(this);
+		} else {
+			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -4962,6 +5412,14 @@ export class Label_anyContext extends ParserRuleContext {
 			listener.exitLabel_any(this);
 		}
 	}
+	// @Override
+	public accept<Result>(visitor: TypeQLVisitor<Result>): Result {
+		if (visitor.visitLabel_any) {
+			return visitor.visitLabel_any(this);
+		} else {
+			return visitor.visitChildren(this);
+		}
+	}
 }
 
 
@@ -4982,6 +5440,14 @@ export class Label_scopedContext extends ParserRuleContext {
 	public exitRule(listener: TypeQLListener): void {
 		if (listener.exitLabel_scoped) {
 			listener.exitLabel_scoped(this);
+		}
+	}
+	// @Override
+	public accept<Result>(visitor: TypeQLVisitor<Result>): Result {
+		if (visitor.visitLabel_scoped) {
+			return visitor.visitLabel_scoped(this);
+		} else {
+			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -5015,6 +5481,14 @@ export class LabelContext extends ParserRuleContext {
 			listener.exitLabel(this);
 		}
 	}
+	// @Override
+	public accept<Result>(visitor: TypeQLVisitor<Result>): Result {
+		if (visitor.visitLabel) {
+			return visitor.visitLabel(this);
+		} else {
+			return visitor.visitChildren(this);
+		}
+	}
 }
 
 
@@ -5035,6 +5509,14 @@ export class Schema_nativeContext extends ParserRuleContext {
 	public exitRule(listener: TypeQLListener): void {
 		if (listener.exitSchema_native) {
 			listener.exitSchema_native(this);
+		}
+	}
+	// @Override
+	public accept<Result>(visitor: TypeQLVisitor<Result>): Result {
+		if (visitor.visitSchema_native) {
+			return visitor.visitSchema_native(this);
+		} else {
+			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -5063,6 +5545,14 @@ export class Type_nativeContext extends ParserRuleContext {
 			listener.exitType_native(this);
 		}
 	}
+	// @Override
+	public accept<Result>(visitor: TypeQLVisitor<Result>): Result {
+		if (visitor.visitType_native) {
+			return visitor.visitType_native(this);
+		} else {
+			return visitor.visitChildren(this);
+		}
+	}
 }
 
 
@@ -5087,6 +5577,14 @@ export class Value_typeContext extends ParserRuleContext {
 	public exitRule(listener: TypeQLListener): void {
 		if (listener.exitValue_type) {
 			listener.exitValue_type(this);
+		}
+	}
+	// @Override
+	public accept<Result>(visitor: TypeQLVisitor<Result>): Result {
+		if (visitor.visitValue_type) {
+			return visitor.visitValue_type(this);
+		} else {
+			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -5116,6 +5614,14 @@ export class ValueContext extends ParserRuleContext {
 			listener.exitValue(this);
 		}
 	}
+	// @Override
+	public accept<Result>(visitor: TypeQLVisitor<Result>): Result {
+		if (visitor.visitValue) {
+			return visitor.visitValue(this);
+		} else {
+			return visitor.visitChildren(this);
+		}
+	}
 }
 
 
@@ -5136,6 +5642,14 @@ export class RegexContext extends ParserRuleContext {
 	public exitRule(listener: TypeQLListener): void {
 		if (listener.exitRegex) {
 			listener.exitRegex(this);
+		}
+	}
+	// @Override
+	public accept<Result>(visitor: TypeQLVisitor<Result>): Result {
+		if (visitor.visitRegex) {
+			return visitor.visitRegex(this);
+		} else {
+			return visitor.visitChildren(this);
 		}
 	}
 }
@@ -5171,6 +5685,14 @@ export class UnreservedContext extends ParserRuleContext {
 	public exitRule(listener: TypeQLListener): void {
 		if (listener.exitUnreserved) {
 			listener.exitUnreserved(this);
+		}
+	}
+	// @Override
+	public accept<Result>(visitor: TypeQLVisitor<Result>): Result {
+		if (visitor.visitUnreserved) {
+			return visitor.visitUnreserved(this);
+		} else {
+			return visitor.visitChildren(this);
 		}
 	}
 }

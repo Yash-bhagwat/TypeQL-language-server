@@ -3370,6 +3370,15 @@ class Eof_queryContext extends ParserRuleContext_1.ParserRuleContext {
             listener.exitEof_query(this);
         }
     }
+    // @Override
+    accept(visitor) {
+        if (visitor.visitEof_query) {
+            return visitor.visitEof_query(this);
+        }
+        else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 exports.Eof_queryContext = Eof_queryContext;
 class Eof_queriesContext extends ParserRuleContext_1.ParserRuleContext {
@@ -3399,6 +3408,15 @@ class Eof_queriesContext extends ParserRuleContext_1.ParserRuleContext {
             listener.exitEof_queries(this);
         }
     }
+    // @Override
+    accept(visitor) {
+        if (visitor.visitEof_queries) {
+            return visitor.visitEof_queries(this);
+        }
+        else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 exports.Eof_queriesContext = Eof_queriesContext;
 class Eof_patternContext extends ParserRuleContext_1.ParserRuleContext {
@@ -3421,6 +3439,15 @@ class Eof_patternContext extends ParserRuleContext_1.ParserRuleContext {
     exitRule(listener) {
         if (listener.exitEof_pattern) {
             listener.exitEof_pattern(this);
+        }
+    }
+    // @Override
+    accept(visitor) {
+        if (visitor.visitEof_pattern) {
+            return visitor.visitEof_pattern(this);
+        }
+        else {
+            return visitor.visitChildren(this);
         }
     }
 }
@@ -3447,6 +3474,15 @@ class Eof_patternsContext extends ParserRuleContext_1.ParserRuleContext {
             listener.exitEof_patterns(this);
         }
     }
+    // @Override
+    accept(visitor) {
+        if (visitor.visitEof_patterns) {
+            return visitor.visitEof_patterns(this);
+        }
+        else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 exports.Eof_patternsContext = Eof_patternsContext;
 class Eof_definablesContext extends ParserRuleContext_1.ParserRuleContext {
@@ -3469,6 +3505,15 @@ class Eof_definablesContext extends ParserRuleContext_1.ParserRuleContext {
     exitRule(listener) {
         if (listener.exitEof_definables) {
             listener.exitEof_definables(this);
+        }
+    }
+    // @Override
+    accept(visitor) {
+        if (visitor.visitEof_definables) {
+            return visitor.visitEof_definables(this);
+        }
+        else {
+            return visitor.visitChildren(this);
         }
     }
 }
@@ -3495,6 +3540,15 @@ class Eof_variableContext extends ParserRuleContext_1.ParserRuleContext {
             listener.exitEof_variable(this);
         }
     }
+    // @Override
+    accept(visitor) {
+        if (visitor.visitEof_variable) {
+            return visitor.visitEof_variable(this);
+        }
+        else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 exports.Eof_variableContext = Eof_variableContext;
 class Eof_labelContext extends ParserRuleContext_1.ParserRuleContext {
@@ -3519,6 +3573,15 @@ class Eof_labelContext extends ParserRuleContext_1.ParserRuleContext {
             listener.exitEof_label(this);
         }
     }
+    // @Override
+    accept(visitor) {
+        if (visitor.visitEof_label) {
+            return visitor.visitEof_label(this);
+        }
+        else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 exports.Eof_labelContext = Eof_labelContext;
 class Eof_schema_ruleContext extends ParserRuleContext_1.ParserRuleContext {
@@ -3541,6 +3604,15 @@ class Eof_schema_ruleContext extends ParserRuleContext_1.ParserRuleContext {
     exitRule(listener) {
         if (listener.exitEof_schema_rule) {
             listener.exitEof_schema_rule(this);
+        }
+    }
+    // @Override
+    accept(visitor) {
+        if (visitor.visitEof_schema_rule) {
+            return visitor.visitEof_schema_rule(this);
+        }
+        else {
+            return visitor.visitChildren(this);
         }
     }
 }
@@ -3590,6 +3662,15 @@ class QueryContext extends ParserRuleContext_1.ParserRuleContext {
             listener.exitQuery(this);
         }
     }
+    // @Override
+    accept(visitor) {
+        if (visitor.visitQuery) {
+            return visitor.visitQuery(this);
+        }
+        else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 exports.QueryContext = QueryContext;
 class Query_defineContext extends ParserRuleContext_1.ParserRuleContext {
@@ -3614,6 +3695,15 @@ class Query_defineContext extends ParserRuleContext_1.ParserRuleContext {
             listener.exitQuery_define(this);
         }
     }
+    // @Override
+    accept(visitor) {
+        if (visitor.visitQuery_define) {
+            return visitor.visitQuery_define(this);
+        }
+        else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 exports.Query_defineContext = Query_defineContext;
 class Query_undefineContext extends ParserRuleContext_1.ParserRuleContext {
@@ -3636,6 +3726,15 @@ class Query_undefineContext extends ParserRuleContext_1.ParserRuleContext {
     exitRule(listener) {
         if (listener.exitQuery_undefine) {
             listener.exitQuery_undefine(this);
+        }
+    }
+    // @Override
+    accept(visitor) {
+        if (visitor.visitQuery_undefine) {
+            return visitor.visitQuery_undefine(this);
+        }
+        else {
+            return visitor.visitChildren(this);
         }
     }
 }
@@ -3666,6 +3765,15 @@ class Query_insertContext extends ParserRuleContext_1.ParserRuleContext {
             listener.exitQuery_insert(this);
         }
     }
+    // @Override
+    accept(visitor) {
+        if (visitor.visitQuery_insert) {
+            return visitor.visitQuery_insert(this);
+        }
+        else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 exports.Query_insertContext = Query_insertContext;
 class Query_updateContext extends ParserRuleContext_1.ParserRuleContext {
@@ -3691,6 +3799,15 @@ class Query_updateContext extends ParserRuleContext_1.ParserRuleContext {
     exitRule(listener) {
         if (listener.exitQuery_update) {
             listener.exitQuery_update(this);
+        }
+    }
+    // @Override
+    accept(visitor) {
+        if (visitor.visitQuery_update) {
+            return visitor.visitQuery_update(this);
+        }
+        else {
+            return visitor.visitChildren(this);
         }
     }
 }
@@ -3721,6 +3838,15 @@ class Query_deleteContext extends ParserRuleContext_1.ParserRuleContext {
             listener.exitQuery_delete(this);
         }
     }
+    // @Override
+    accept(visitor) {
+        if (visitor.visitQuery_delete) {
+            return visitor.visitQuery_delete(this);
+        }
+        else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 exports.Query_deleteContext = Query_deleteContext;
 class Query_matchContext extends ParserRuleContext_1.ParserRuleContext {
@@ -3746,6 +3872,15 @@ class Query_matchContext extends ParserRuleContext_1.ParserRuleContext {
     exitRule(listener) {
         if (listener.exitQuery_match) {
             listener.exitQuery_match(this);
+        }
+    }
+    // @Override
+    accept(visitor) {
+        if (visitor.visitQuery_match) {
+            return visitor.visitQuery_match(this);
+        }
+        else {
+            return visitor.visitChildren(this);
         }
     }
 }
@@ -3774,6 +3909,15 @@ class Query_match_aggregateContext extends ParserRuleContext_1.ParserRuleContext
             listener.exitQuery_match_aggregate(this);
         }
     }
+    // @Override
+    accept(visitor) {
+        if (visitor.visitQuery_match_aggregate) {
+            return visitor.visitQuery_match_aggregate(this);
+        }
+        else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 exports.Query_match_aggregateContext = Query_match_aggregateContext;
 class Query_match_groupContext extends ParserRuleContext_1.ParserRuleContext {
@@ -3798,6 +3942,15 @@ class Query_match_groupContext extends ParserRuleContext_1.ParserRuleContext {
     exitRule(listener) {
         if (listener.exitQuery_match_group) {
             listener.exitQuery_match_group(this);
+        }
+    }
+    // @Override
+    accept(visitor) {
+        if (visitor.visitQuery_match_group) {
+            return visitor.visitQuery_match_group(this);
+        }
+        else {
+            return visitor.visitChildren(this);
         }
     }
 }
@@ -3827,6 +3980,15 @@ class Query_match_group_aggContext extends ParserRuleContext_1.ParserRuleContext
     exitRule(listener) {
         if (listener.exitQuery_match_group_agg) {
             listener.exitQuery_match_group_agg(this);
+        }
+    }
+    // @Override
+    accept(visitor) {
+        if (visitor.visitQuery_match_group_agg) {
+            return visitor.visitQuery_match_group_agg(this);
+        }
+        else {
+            return visitor.visitChildren(this);
         }
     }
 }
@@ -3861,6 +4023,15 @@ class ModifiersContext extends ParserRuleContext_1.ParserRuleContext {
             listener.exitModifiers(this);
         }
     }
+    // @Override
+    accept(visitor) {
+        if (visitor.visitModifiers) {
+            return visitor.visitModifiers(this);
+        }
+        else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 exports.ModifiersContext = ModifiersContext;
 class FilterContext extends ParserRuleContext_1.ParserRuleContext {
@@ -3888,6 +4059,15 @@ class FilterContext extends ParserRuleContext_1.ParserRuleContext {
     exitRule(listener) {
         if (listener.exitFilter) {
             listener.exitFilter(this);
+        }
+    }
+    // @Override
+    accept(visitor) {
+        if (visitor.visitFilter) {
+            return visitor.visitFilter(this);
+        }
+        else {
+            return visitor.visitChildren(this);
         }
     }
 }
@@ -3919,6 +4099,15 @@ class SortContext extends ParserRuleContext_1.ParserRuleContext {
             listener.exitSort(this);
         }
     }
+    // @Override
+    accept(visitor) {
+        if (visitor.visitSort) {
+            return visitor.visitSort(this);
+        }
+        else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 exports.SortContext = SortContext;
 class Var_orderContext extends ParserRuleContext_1.ParserRuleContext {
@@ -3939,6 +4128,15 @@ class Var_orderContext extends ParserRuleContext_1.ParserRuleContext {
     exitRule(listener) {
         if (listener.exitVar_order) {
             listener.exitVar_order(this);
+        }
+    }
+    // @Override
+    accept(visitor) {
+        if (visitor.visitVar_order) {
+            return visitor.visitVar_order(this);
+        }
+        else {
+            return visitor.visitChildren(this);
         }
     }
 }
@@ -3963,6 +4161,15 @@ class OffsetContext extends ParserRuleContext_1.ParserRuleContext {
             listener.exitOffset(this);
         }
     }
+    // @Override
+    accept(visitor) {
+        if (visitor.visitOffset) {
+            return visitor.visitOffset(this);
+        }
+        else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 exports.OffsetContext = OffsetContext;
 class LimitContext extends ParserRuleContext_1.ParserRuleContext {
@@ -3983,6 +4190,15 @@ class LimitContext extends ParserRuleContext_1.ParserRuleContext {
     exitRule(listener) {
         if (listener.exitLimit) {
             listener.exitLimit(this);
+        }
+    }
+    // @Override
+    accept(visitor) {
+        if (visitor.visitLimit) {
+            return visitor.visitLimit(this);
+        }
+        else {
+            return visitor.visitChildren(this);
         }
     }
 }
@@ -4007,6 +4223,15 @@ class Match_aggregateContext extends ParserRuleContext_1.ParserRuleContext {
     exitRule(listener) {
         if (listener.exitMatch_aggregate) {
             listener.exitMatch_aggregate(this);
+        }
+    }
+    // @Override
+    accept(visitor) {
+        if (visitor.visitMatch_aggregate) {
+            return visitor.visitMatch_aggregate(this);
+        }
+        else {
+            return visitor.visitChildren(this);
         }
     }
 }
@@ -4036,6 +4261,15 @@ class Aggregate_methodContext extends ParserRuleContext_1.ParserRuleContext {
             listener.exitAggregate_method(this);
         }
     }
+    // @Override
+    accept(visitor) {
+        if (visitor.visitAggregate_method) {
+            return visitor.visitAggregate_method(this);
+        }
+        else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 exports.Aggregate_methodContext = Aggregate_methodContext;
 class Match_groupContext extends ParserRuleContext_1.ParserRuleContext {
@@ -4056,6 +4290,15 @@ class Match_groupContext extends ParserRuleContext_1.ParserRuleContext {
     exitRule(listener) {
         if (listener.exitMatch_group) {
             listener.exitMatch_group(this);
+        }
+    }
+    // @Override
+    accept(visitor) {
+        if (visitor.visitMatch_group) {
+            return visitor.visitMatch_group(this);
+        }
+        else {
+            return visitor.visitChildren(this);
         }
     }
 }
@@ -4086,6 +4329,15 @@ class DefinablesContext extends ParserRuleContext_1.ParserRuleContext {
             listener.exitDefinables(this);
         }
     }
+    // @Override
+    accept(visitor) {
+        if (visitor.visitDefinables) {
+            return visitor.visitDefinables(this);
+        }
+        else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 exports.DefinablesContext = DefinablesContext;
 class DefinableContext extends ParserRuleContext_1.ParserRuleContext {
@@ -4110,6 +4362,15 @@ class DefinableContext extends ParserRuleContext_1.ParserRuleContext {
     exitRule(listener) {
         if (listener.exitDefinable) {
             listener.exitDefinable(this);
+        }
+    }
+    // @Override
+    accept(visitor) {
+        if (visitor.visitDefinable) {
+            return visitor.visitDefinable(this);
+        }
+        else {
+            return visitor.visitChildren(this);
         }
     }
 }
@@ -4138,6 +4399,15 @@ class PatternsContext extends ParserRuleContext_1.ParserRuleContext {
     exitRule(listener) {
         if (listener.exitPatterns) {
             listener.exitPatterns(this);
+        }
+    }
+    // @Override
+    accept(visitor) {
+        if (visitor.visitPatterns) {
+            return visitor.visitPatterns(this);
+        }
+        else {
+            return visitor.visitChildren(this);
         }
     }
 }
@@ -4172,6 +4442,15 @@ class PatternContext extends ParserRuleContext_1.ParserRuleContext {
             listener.exitPattern(this);
         }
     }
+    // @Override
+    accept(visitor) {
+        if (visitor.visitPattern) {
+            return visitor.visitPattern(this);
+        }
+        else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 exports.PatternContext = PatternContext;
 class Pattern_conjunctionContext extends ParserRuleContext_1.ParserRuleContext {
@@ -4193,6 +4472,15 @@ class Pattern_conjunctionContext extends ParserRuleContext_1.ParserRuleContext {
     exitRule(listener) {
         if (listener.exitPattern_conjunction) {
             listener.exitPattern_conjunction(this);
+        }
+    }
+    // @Override
+    accept(visitor) {
+        if (visitor.visitPattern_conjunction) {
+            return visitor.visitPattern_conjunction(this);
+        }
+        else {
+            return visitor.visitChildren(this);
         }
     }
 }
@@ -4231,6 +4519,15 @@ class Pattern_disjunctionContext extends ParserRuleContext_1.ParserRuleContext {
             listener.exitPattern_disjunction(this);
         }
     }
+    // @Override
+    accept(visitor) {
+        if (visitor.visitPattern_disjunction) {
+            return visitor.visitPattern_disjunction(this);
+        }
+        else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 exports.Pattern_disjunctionContext = Pattern_disjunctionContext;
 class Pattern_negationContext extends ParserRuleContext_1.ParserRuleContext {
@@ -4253,6 +4550,15 @@ class Pattern_negationContext extends ParserRuleContext_1.ParserRuleContext {
     exitRule(listener) {
         if (listener.exitPattern_negation) {
             listener.exitPattern_negation(this);
+        }
+    }
+    // @Override
+    accept(visitor) {
+        if (visitor.visitPattern_negation) {
+            return visitor.visitPattern_negation(this);
+        }
+        else {
+            return visitor.visitChildren(this);
         }
     }
 }
@@ -4284,6 +4590,15 @@ class Pattern_variableContext extends ParserRuleContext_1.ParserRuleContext {
             listener.exitPattern_variable(this);
         }
     }
+    // @Override
+    accept(visitor) {
+        if (visitor.visitPattern_variable) {
+            return visitor.visitPattern_variable(this);
+        }
+        else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 exports.Pattern_variableContext = Pattern_variableContext;
 class Variable_conceptContext extends ParserRuleContext_1.ParserRuleContext {
@@ -4311,6 +4626,15 @@ class Variable_conceptContext extends ParserRuleContext_1.ParserRuleContext {
     exitRule(listener) {
         if (listener.exitVariable_concept) {
             listener.exitVariable_concept(this);
+        }
+    }
+    // @Override
+    accept(visitor) {
+        if (visitor.visitVariable_concept) {
+            return visitor.visitVariable_concept(this);
+        }
+        else {
+            return visitor.visitChildren(this);
         }
     }
 }
@@ -4342,6 +4666,15 @@ class Variable_typeContext extends ParserRuleContext_1.ParserRuleContext {
     exitRule(listener) {
         if (listener.exitVariable_type) {
             listener.exitVariable_type(this);
+        }
+    }
+    // @Override
+    accept(visitor) {
+        if (visitor.visitVariable_type) {
+            return visitor.visitVariable_type(this);
+        }
+        else {
+            return visitor.visitChildren(this);
         }
     }
 }
@@ -4395,6 +4728,15 @@ class Type_constraintContext extends ParserRuleContext_1.ParserRuleContext {
             listener.exitType_constraint(this);
         }
     }
+    // @Override
+    accept(visitor) {
+        if (visitor.visitType_constraint) {
+            return visitor.visitType_constraint(this);
+        }
+        else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 exports.Type_constraintContext = Type_constraintContext;
 class Variable_thingsContext extends ParserRuleContext_1.ParserRuleContext {
@@ -4421,6 +4763,15 @@ class Variable_thingsContext extends ParserRuleContext_1.ParserRuleContext {
     exitRule(listener) {
         if (listener.exitVariable_things) {
             listener.exitVariable_things(this);
+        }
+    }
+    // @Override
+    accept(visitor) {
+        if (visitor.visitVariable_things) {
+            return visitor.visitVariable_things(this);
+        }
+        else {
+            return visitor.visitChildren(this);
         }
     }
 }
@@ -4452,6 +4803,15 @@ class Variable_thing_anyContext extends ParserRuleContext_1.ParserRuleContext {
             listener.exitVariable_thing_any(this);
         }
     }
+    // @Override
+    accept(visitor) {
+        if (visitor.visitVariable_thing_any) {
+            return visitor.visitVariable_thing_any(this);
+        }
+        else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 exports.Variable_thing_anyContext = Variable_thing_anyContext;
 class Variable_thingContext extends ParserRuleContext_1.ParserRuleContext {
@@ -4480,6 +4840,15 @@ class Variable_thingContext extends ParserRuleContext_1.ParserRuleContext {
     exitRule(listener) {
         if (listener.exitVariable_thing) {
             listener.exitVariable_thing(this);
+        }
+    }
+    // @Override
+    accept(visitor) {
+        if (visitor.visitVariable_thing) {
+            return visitor.visitVariable_thing(this);
+        }
+        else {
+            return visitor.visitChildren(this);
         }
     }
 }
@@ -4513,6 +4882,15 @@ class Variable_relationContext extends ParserRuleContext_1.ParserRuleContext {
             listener.exitVariable_relation(this);
         }
     }
+    // @Override
+    accept(visitor) {
+        if (visitor.visitVariable_relation) {
+            return visitor.visitVariable_relation(this);
+        }
+        else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 exports.Variable_relationContext = Variable_relationContext;
 class Variable_attributeContext extends ParserRuleContext_1.ParserRuleContext {
@@ -4544,6 +4922,15 @@ class Variable_attributeContext extends ParserRuleContext_1.ParserRuleContext {
             listener.exitVariable_attribute(this);
         }
     }
+    // @Override
+    accept(visitor) {
+        if (visitor.visitVariable_attribute) {
+            return visitor.visitVariable_attribute(this);
+        }
+        else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 exports.Variable_attributeContext = Variable_attributeContext;
 class RelationContext extends ParserRuleContext_1.ParserRuleContext {
@@ -4572,6 +4959,15 @@ class RelationContext extends ParserRuleContext_1.ParserRuleContext {
             listener.exitRelation(this);
         }
     }
+    // @Override
+    accept(visitor) {
+        if (visitor.visitRelation) {
+            return visitor.visitRelation(this);
+        }
+        else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 exports.RelationContext = RelationContext;
 class Role_playerContext extends ParserRuleContext_1.ParserRuleContext {
@@ -4598,6 +4994,15 @@ class Role_playerContext extends ParserRuleContext_1.ParserRuleContext {
             listener.exitRole_player(this);
         }
     }
+    // @Override
+    accept(visitor) {
+        if (visitor.visitRole_player) {
+            return visitor.visitRole_player(this);
+        }
+        else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 exports.Role_playerContext = Role_playerContext;
 class PlayerContext extends ParserRuleContext_1.ParserRuleContext {
@@ -4617,6 +5022,15 @@ class PlayerContext extends ParserRuleContext_1.ParserRuleContext {
     exitRule(listener) {
         if (listener.exitPlayer) {
             listener.exitPlayer(this);
+        }
+    }
+    // @Override
+    accept(visitor) {
+        if (visitor.visitPlayer) {
+            return visitor.visitPlayer(this);
+        }
+        else {
+            return visitor.visitChildren(this);
         }
     }
 }
@@ -4647,6 +5061,15 @@ class AttributesContext extends ParserRuleContext_1.ParserRuleContext {
             listener.exitAttributes(this);
         }
     }
+    // @Override
+    accept(visitor) {
+        if (visitor.visitAttributes) {
+            return visitor.visitAttributes(this);
+        }
+        else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 exports.AttributesContext = AttributesContext;
 class AttributeContext extends ParserRuleContext_1.ParserRuleContext {
@@ -4673,6 +5096,15 @@ class AttributeContext extends ParserRuleContext_1.ParserRuleContext {
     exitRule(listener) {
         if (listener.exitAttribute) {
             listener.exitAttribute(this);
+        }
+    }
+    // @Override
+    accept(visitor) {
+        if (visitor.visitAttribute) {
+            return visitor.visitAttribute(this);
+        }
+        else {
+            return visitor.visitChildren(this);
         }
     }
 }
@@ -4708,6 +5140,15 @@ class PredicateContext extends ParserRuleContext_1.ParserRuleContext {
             listener.exitPredicate(this);
         }
     }
+    // @Override
+    accept(visitor) {
+        if (visitor.visitPredicate) {
+            return visitor.visitPredicate(this);
+        }
+        else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 exports.PredicateContext = PredicateContext;
 class Predicate_equalityContext extends ParserRuleContext_1.ParserRuleContext {
@@ -4734,6 +5175,15 @@ class Predicate_equalityContext extends ParserRuleContext_1.ParserRuleContext {
             listener.exitPredicate_equality(this);
         }
     }
+    // @Override
+    accept(visitor) {
+        if (visitor.visitPredicate_equality) {
+            return visitor.visitPredicate_equality(this);
+        }
+        else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 exports.Predicate_equalityContext = Predicate_equalityContext;
 class Predicate_substringContext extends ParserRuleContext_1.ParserRuleContext {
@@ -4754,6 +5204,15 @@ class Predicate_substringContext extends ParserRuleContext_1.ParserRuleContext {
     exitRule(listener) {
         if (listener.exitPredicate_substring) {
             listener.exitPredicate_substring(this);
+        }
+    }
+    // @Override
+    accept(visitor) {
+        if (visitor.visitPredicate_substring) {
+            return visitor.visitPredicate_substring(this);
+        }
+        else {
+            return visitor.visitChildren(this);
         }
     }
 }
@@ -4778,6 +5237,15 @@ class Predicate_valueContext extends ParserRuleContext_1.ParserRuleContext {
     exitRule(listener) {
         if (listener.exitPredicate_value) {
             listener.exitPredicate_value(this);
+        }
+    }
+    // @Override
+    accept(visitor) {
+        if (visitor.visitPredicate_value) {
+            return visitor.visitPredicate_value(this);
+        }
+        else {
+            return visitor.visitChildren(this);
         }
     }
 }
@@ -4812,6 +5280,15 @@ class Schema_ruleContext extends ParserRuleContext_1.ParserRuleContext {
             listener.exitSchema_rule(this);
         }
     }
+    // @Override
+    accept(visitor) {
+        if (visitor.visitSchema_rule) {
+            return visitor.visitSchema_rule(this);
+        }
+        else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 exports.Schema_ruleContext = Schema_ruleContext;
 class Type_anyContext extends ParserRuleContext_1.ParserRuleContext {
@@ -4839,6 +5316,15 @@ class Type_anyContext extends ParserRuleContext_1.ParserRuleContext {
             listener.exitType_any(this);
         }
     }
+    // @Override
+    accept(visitor) {
+        if (visitor.visitType_any) {
+            return visitor.visitType_any(this);
+        }
+        else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 exports.Type_anyContext = Type_anyContext;
 class Type_scopedContext extends ParserRuleContext_1.ParserRuleContext {
@@ -4863,6 +5349,15 @@ class Type_scopedContext extends ParserRuleContext_1.ParserRuleContext {
             listener.exitType_scoped(this);
         }
     }
+    // @Override
+    accept(visitor) {
+        if (visitor.visitType_scoped) {
+            return visitor.visitType_scoped(this);
+        }
+        else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 exports.Type_scopedContext = Type_scopedContext;
 class TypeContext extends ParserRuleContext_1.ParserRuleContext {
@@ -4885,6 +5380,15 @@ class TypeContext extends ParserRuleContext_1.ParserRuleContext {
     exitRule(listener) {
         if (listener.exitType) {
             listener.exitType(this);
+        }
+    }
+    // @Override
+    accept(visitor) {
+        if (visitor.visitType) {
+            return visitor.visitType(this);
+        }
+        else {
+            return visitor.visitChildren(this);
         }
     }
 }
@@ -4913,6 +5417,15 @@ class Label_anyContext extends ParserRuleContext_1.ParserRuleContext {
             listener.exitLabel_any(this);
         }
     }
+    // @Override
+    accept(visitor) {
+        if (visitor.visitLabel_any) {
+            return visitor.visitLabel_any(this);
+        }
+        else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 exports.Label_anyContext = Label_anyContext;
 class Label_scopedContext extends ParserRuleContext_1.ParserRuleContext {
@@ -4932,6 +5445,15 @@ class Label_scopedContext extends ParserRuleContext_1.ParserRuleContext {
     exitRule(listener) {
         if (listener.exitLabel_scoped) {
             listener.exitLabel_scoped(this);
+        }
+    }
+    // @Override
+    accept(visitor) {
+        if (visitor.visitLabel_scoped) {
+            return visitor.visitLabel_scoped(this);
+        }
+        else {
+            return visitor.visitChildren(this);
         }
     }
 }
@@ -4964,6 +5486,15 @@ class LabelContext extends ParserRuleContext_1.ParserRuleContext {
             listener.exitLabel(this);
         }
     }
+    // @Override
+    accept(visitor) {
+        if (visitor.visitLabel) {
+            return visitor.visitLabel(this);
+        }
+        else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 exports.LabelContext = LabelContext;
 class Schema_nativeContext extends ParserRuleContext_1.ParserRuleContext {
@@ -4983,6 +5514,15 @@ class Schema_nativeContext extends ParserRuleContext_1.ParserRuleContext {
     exitRule(listener) {
         if (listener.exitSchema_native) {
             listener.exitSchema_native(this);
+        }
+    }
+    // @Override
+    accept(visitor) {
+        if (visitor.visitSchema_native) {
+            return visitor.visitSchema_native(this);
+        }
+        else {
+            return visitor.visitChildren(this);
         }
     }
 }
@@ -5010,6 +5550,15 @@ class Type_nativeContext extends ParserRuleContext_1.ParserRuleContext {
             listener.exitType_native(this);
         }
     }
+    // @Override
+    accept(visitor) {
+        if (visitor.visitType_native) {
+            return visitor.visitType_native(this);
+        }
+        else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 exports.Type_nativeContext = Type_nativeContext;
 class Value_typeContext extends ParserRuleContext_1.ParserRuleContext {
@@ -5033,6 +5582,15 @@ class Value_typeContext extends ParserRuleContext_1.ParserRuleContext {
     exitRule(listener) {
         if (listener.exitValue_type) {
             listener.exitValue_type(this);
+        }
+    }
+    // @Override
+    accept(visitor) {
+        if (visitor.visitValue_type) {
+            return visitor.visitValue_type(this);
+        }
+        else {
+            return visitor.visitChildren(this);
         }
     }
 }
@@ -5061,6 +5619,15 @@ class ValueContext extends ParserRuleContext_1.ParserRuleContext {
             listener.exitValue(this);
         }
     }
+    // @Override
+    accept(visitor) {
+        if (visitor.visitValue) {
+            return visitor.visitValue(this);
+        }
+        else {
+            return visitor.visitChildren(this);
+        }
+    }
 }
 exports.ValueContext = ValueContext;
 class RegexContext extends ParserRuleContext_1.ParserRuleContext {
@@ -5080,6 +5647,15 @@ class RegexContext extends ParserRuleContext_1.ParserRuleContext {
     exitRule(listener) {
         if (listener.exitRegex) {
             listener.exitRegex(this);
+        }
+    }
+    // @Override
+    accept(visitor) {
+        if (visitor.visitRegex) {
+            return visitor.visitRegex(this);
+        }
+        else {
+            return visitor.visitChildren(this);
         }
     }
 }
@@ -5114,6 +5690,15 @@ class UnreservedContext extends ParserRuleContext_1.ParserRuleContext {
     exitRule(listener) {
         if (listener.exitUnreserved) {
             listener.exitUnreserved(this);
+        }
+    }
+    // @Override
+    accept(visitor) {
+        if (visitor.visitUnreserved) {
+            return visitor.visitUnreserved(this);
+        }
+        else {
+            return visitor.visitChildren(this);
         }
     }
 }

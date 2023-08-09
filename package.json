@@ -4,12 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "antlr4ts": "antlr4ts src/TypeQL.g4",
+    "antlr4ts": "antlr4ts -visitor src/TypeQL.g4",
     "build": "npm run antlr4ts && tsc -b"
   },
   "dependencies": {
     "antlr4-c3": "^1.1.12",
-    "antlr4ts": "^0.5.0-alpha.4"
+    "antlr4ts": "^0.5.0-alpha.4",
+    "fuzzysort": "^1.1.4"
   },
   "keywords": [],
   "author": "",
